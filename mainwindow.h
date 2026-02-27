@@ -4,7 +4,6 @@
 #include <QMainWindow>
 #include "DiscordDataTypes.h"
 #include "DiscordMessage.h"
-#include "discordsettings.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

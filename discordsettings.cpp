@@ -80,6 +80,7 @@ void DiscordSettings::addChannel(QStandardItem* parentServer, QString name){
     });
 
     treeView->setIndexWidget(actionItem2->index(),removeButton);
+    treeView->expand( parentServer->index());
 }
 
 void DiscordSettings::removeChannel(QStandardItem *item,QStandardItem *pserver)
@@ -106,6 +107,7 @@ void DiscordSettings::addWebHook(QStandardItem* parentChannel, QString name, QSt
     });
 
     treeView->setIndexWidget(actionItem2->index(),removeButton);
+    treeView->expand( parentChannel->index());
 }
 
 void DiscordSettings::SetupWebhookTree(){
